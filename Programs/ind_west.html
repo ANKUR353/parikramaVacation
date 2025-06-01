@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parikramaa Vacations</title>
+    <link rel="icon" type="image/x-icon" href="../img/logo.png" />
+    <link rel="stylesheet" href="../fontawesome-5.5/css/all.min.css" />
+    <link rel="stylesheet" href="../slick/slick.css" />
+    <link rel="stylesheet" href="../slick/slick-theme.css" />
+    <link rel="stylesheet" href="../magnific-popup/magnific-popup.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/tm-style.css" />
+    <style>
+      /* Vertical center for modal in Bootstrap 4 */
+      .modal-dialog-centered-custom {
+        display: flex;
+        align-items: center;
+        min-height: calc(100% - 1rem);
+      }
+
+      .modal.fade .modal-dialog {
+        transform: translate(0, 0);
+        transition: transform 0.3s ease-out;
+      }
+
+      @media (min-width: 576px) {
+        .modal-dialog {
+          margin: 0 auto;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md tm-navbar scroll" id="tmNav">
+      <div class="container">
+        <div class="">
+          <a href="#hero" class="navbar-brand">
+            <img
+              src="../img/logoFull.png"
+              alt="Logo"
+              class="logoFull"
+              id="logoImg"
+            />
+          </a>
+        </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars navbar-toggler-icon"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link tm-nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link tm-nav-link" href="../index.html#programs"
+                >Programs</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link tm-nav-link" href="../index.html#work"
+                >Our Work</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link tm-nav-link" href="../index.html#contact"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navigation -->
+
+    <section id="" class="tm-section-pad-top">
+      <div class="container">
+        <div>
+          <h2 class="mb-2">Programs in Western India</h2>
+
+          <p class="mb-3 tm-Small-Font">
+            Nullam tincidunt, lacus a suscipit luctus, elit turpis tincidunt
+            dui, non tempus sem turpis vitae lorem. Maecenas eget odio in sapien
+            ultrices viverra vitae vel leo. Curabitur at elit eu risus pharetra
+            pellentesque at at velit.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="../img/W_IND.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Regal Rajasthan: The Land of Kings & Palaces
+                </h5>
+                <ul class="card-text tm-Small-Font">
+                  <li>
+                    Rajasthan-Jaipur(2N), Puskar(1N), Udaipur(2N), Mount
+                    Abu(2N), Jaisalmer(2N), Jodhpur(1N)
+                  </li>
+                  <li>15 Days</li>
+                </ul>
+              </div>
+              <div class="card-footer">
+                <!-- Button trigger modal -->
+                <a data-toggle="modal" href="#customModal"> Know More </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="../img/W_IND.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Gujarat Chronicles: The Land of Krishna & Gandhi
+                </h5>
+                <ul class="card-text tm-Small-Font">
+                  <li>
+                    Gujrat-ahmedabad(2N), Junagarh(1N), Somnath(3N), Dwarka(2N),
+                    Porbandar(1N)
+                  </li>
+                  <li>14 Days</li>
+                </ul>
+              </div>
+              <div class="card-footer">
+                <!-- Button trigger modal -->
+                <a data-toggle="modal" href="#customModal"> Know More </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="../img/W_IND.png"
+                alt="Card image cap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Cultural & Coastal Treasures: A Western India Odyssey
+                </h5>
+                <ul class="card-text tm-Small-Font">
+                  <li>
+                    Ajanta-Ellora(2N), Mahabaleshwar(2N), Mumbai(2N),
+                    Matheran(2N), Goa(4N)
+                  </li>
+                  <li>17 Days</li>
+                </ul>
+              </div>
+              <div class="card-footer">
+                <!-- Button trigger modal -->
+                <a data-toggle="modal" href="#customModal"> Know More </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="customModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="customModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered-custom" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>
+              <h5 class="modal-title" id="customModalLabel">Submit Form</h5>
+              <small>We will contact you within 3 business days</small>
+            </div>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- Custom form -->
+            <form id="myForm">
+              <small class="form-row mr-0">
+                <div class="form-group col">
+                  <label for="nameInput">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nameInput"
+                    required
+                  />
+                </div>
+                <div class="form-group col">
+                  <label for="phoneInput">Phone Number</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phoneInput"
+                    required
+                  />
+                </div>
+              </small>
+              <small class="form-row mr-0">
+                <div class="form-group col">
+                  <label for="emailInput">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="emailInput"
+                    required
+                  />
+                </div>
+                <div class="form-group col">
+                  <label>Gender</label><br />
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gender"
+                      id="genderMale"
+                      value="Male"
+                      required
+                    />
+                    <label class="form-check-label" for="genderMale"
+                      >Male</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gender"
+                      id="genderFemale"
+                      value="Female"
+                    />
+                    <label class="form-check-label" for="genderFemale"
+                      >Female</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gender"
+                      id="genderOther"
+                      value="Other"
+                    />
+                    <label class="form-check-label" for="genderOther"
+                      >Other</label
+                    >
+                  </div>
+                </div>
+              </small>
+              <div class="form-group">
+                <label for="cardSelect">Select Card Title</label>
+                <select class="form-control" id="cardSelect" required>
+                  <option value="" disabled selected>Select a card</option>
+                  <option value="Card 1">Card 1</option>
+                  <option value="Card 2">Card 2</option>
+                  <option value="Card 3">Card 3</option>
+                  <option value="Card 4">Card 4</option>
+                </select>
+              </div>
+
+              <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="text-center small">
+      <p class="mb-0">Copyright &copy; 2019 Company Name</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script>
+      $("#myForm").on("submit", function (e) {
+        e.preventDefault();
+        alert("Form submitted!");
+        $("#customModal").modal("hide");
+      });
+    </script>
+  </body>
+</html>
